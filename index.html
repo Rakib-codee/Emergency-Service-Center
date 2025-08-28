@@ -48,229 +48,217 @@
         </div>
       </div>
     </Section>
+    <!-- Emergency Dashboard Section -->
+    <div class="min-h-screen bg-green-50 p-4">
+        <div class="container mx-auto grid grid-cols-1 lg:grid-cols-4 gap-4">
 
-    <main class="w-[1800px] mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <div class="flex flex-col lg:flex-row gap-8">
-            <!-- Emergency Service Cards Section -->
-            <section class="lg:w-[1400px]">
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <!-- National Emergency Number -->
-                    <div class="bg-white rounded-xl shadow-md p-5 hover:shadow-lg transition-all duration-300 hover:-translate-y-1" data-service="National Emergency Number" data-number="999" data-category="All">
-                        <div class="flex justify-between items-start mb-3">
-                            <img src="assets/emergency.png" alt="Emergency" class="w-12 h-12 rounded-lg">
-                            <i class="fas fa-heart heart-icon-card text-gray-300 text-lg cursor-pointer hover:text-red-500 transition-colors duration-200 mt-1" data-service="National Emergency Number"></i>
-                        </div>
-                        <h3 class="text-base font-semibold text-gray-800 mb-1">National Emergency Number</h3>
-                        <p class="text-xs text-gray-600 mb-3">National Emergency</p>
-                        <div class="text-2xl font-bold text-red-600 text-center mb-3">999</div>
-                        <div class="inline-block bg-blue-100 text-blue-700 px-2 py-1 rounded-full text-xs font-medium mb-4">All</div>
-                        <div class="flex space-x-2">
-                            <button class="flex-1 bg-white border border-blue-400 text-blue-600 py-2 px-3 rounded-md text-sm font-medium hover:bg-blue-50 transition-all duration-200 flex items-center justify-center space-x-1" onclick="copyNumber('999', 'National Emergency Number')">
-                                <i class="fas fa-copy text-xs"></i>
-                                <span>Copy</span>
-                            </button>
-                            <button class="flex-1 bg-green-500 text-white py-2 px-3 rounded-md text-sm font-medium hover:bg-green-600 transition-all duration-200 flex items-center justify-center space-x-1" onclick="callService('National Emergency Number', '999')">
-                                <i class="fas fa-phone text-xs"></i>
-                                <span>Call</span>
-                            </button>
-                        </div>
-                    </div>
-
-                    <!-- Police Helpline -->
-                    <div class="bg-white rounded-xl shadow-md p-5 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 mt-4" data-service="Police Helpline Number" data-number="999" data-category="Police">
-                        <div class="flex justify-between items-start mb-3">
-                            <img src="assets/police.png" alt="Police" class="w-11 h-11 rounded-lg">
-                            <i class="fas fa-heart heart-icon-card text-gray-300 text-lg cursor-pointer hover:text-red-500 transition-colors duration-200 mt-1" data-service="Police Helpline Number"></i>
-                        </div>
-                        <h3 class="text-base font-semibold text-gray-800 mb-1">Police Helpline Number</h3>
-                        <p class="text-xs text-gray-600 mb-3">Police</p>
-                        <div class="text-2xl font-bold text-red-600 text-center mb-3">999</div>
-                        <div class="inline-block bg-blue-100 text-blue-700 px-2 py-1 rounded-full text-xs font-medium mb-4">Police</div>
-                        <div class="flex space-x-2">
-                            <button class="flex-1 bg-white border border-blue-400 text-blue-600 py-2 px-3 rounded-md text-sm font-medium hover:bg-blue-50 transition-all duration-200 flex items-center justify-center space-x-1" onclick="copyNumber('999', 'Police Helpline Number')">
-                                <i class="fas fa-copy text-xs"></i>
-                                <span>Copy</span>
-                            </button>
-                            <button class="flex-1 bg-green-500 text-white py-2 px-3 rounded-md text-sm font-medium hover:bg-green-600 transition-all duration-200 flex items-center justify-center space-x-1" onclick="callService('Police Helpline Number', '999')">
-                                <i class="fas fa-phone text-xs"></i>
-                                <span>Call</span>
-                            </button>
-                        </div>
-                    </div>
-
-                    <!-- Fire Service -->
-                    <div class="bg-white rounded-xl shadow-md p-5 hover:shadow-lg transition-all duration-300 hover:-translate-y-1" data-service="Fire Service Number" data-number="999" data-category="Fire">
-                        <div class="flex justify-between items-start mb-3">
-                            <img src="assets/fire-service.png" alt="Fire Service" class="w-12 h-12 rounded-lg">
-                            <i class="fas fa-heart heart-icon-card text-gray-300 text-lg cursor-pointer hover:text-red-500 transition-colors duration-200 mt-1" data-service="Fire Service Number"></i>
-                        </div>
-                        <h3 class="text-base font-semibold text-gray-800 mb-1">Fire Service Number</h3>
-                        <p class="text-xs text-gray-600 mb-3">Fire</p>
-                        <div class="text-2xl font-bold text-red-600 text-center mb-3">999</div>
-                        <div class="inline-block bg-red-100 text-red-700 px-2 py-1 rounded-full text-xs font-medium mb-4">Fire</div>
-                        <div class="flex space-x-2">
-                            <button class="flex-1 bg-white border border-blue-400 text-blue-600 py-2 px-3 rounded-md text-sm font-medium hover:bg-blue-50 transition-all duration-200 flex items-center justify-center space-x-1" onclick="copyNumber('999', 'Fire Service Number')">
-                                <i class="fas fa-copy text-xs"></i>
-                                <span>Copy</span>
-                            </button>
-                            <button class="flex-1 bg-green-500 text-white py-2 px-3 rounded-md text-sm font-medium hover:bg-green-600 transition-all duration-200 flex items-center justify-center space-x-1" onclick="callService('Fire Service Number', '999')">
-                                <i class="fas fa-phone text-xs"></i>
-                                <span>Call</span>
-                            </button>
-                        </div>
-                    </div>
-
-                    <!-- Ambulance Service -->
-                    <div class="bg-white rounded-xl shadow-md p-5 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 mt-2" data-service="Ambulance Service" data-number="1994-999999" data-category="Health">
-                        <div class="flex justify-between items-start mb-3">
-                            <img src="assets/ambulance.png" alt="Ambulance" class="w-11 h-11 rounded-lg">
-                            <i class="fas fa-heart heart-icon-card text-gray-300 text-lg cursor-pointer hover:text-red-500 transition-colors duration-200 mt-1" data-service="Ambulance Service"></i>
-                        </div>
-                        <h3 class="text-base font-semibold text-gray-800 mb-1">Ambulance Service</h3>
-                        <p class="text-xs text-gray-600 mb-3">Health</p>
-                        <div class="text-xl font-bold text-red-600 text-center mb-3">1994-999999</div>
-                        <div class="inline-block bg-green-100 text-green-700 px-2 py-1 rounded-full text-xs font-medium mb-4">Health</div>
-                        <div class="flex space-x-2">
-                            <button class="flex-1 bg-white border border-blue-400 text-blue-600 py-2 px-3 rounded-md text-sm font-medium hover:bg-blue-50 transition-all duration-200 flex items-center justify-center space-x-1" onclick="copyNumber('1994-999999', 'Ambulance Service')">
-                                <i class="fas fa-copy text-xs"></i>
-                                <span>Copy</span>
-                            </button>
-                            <button class="flex-1 bg-green-500 text-white py-2 px-3 rounded-md text-sm font-medium hover:bg-green-600 transition-all duration-200 flex items-center justify-center space-x-1" onclick="callService('Ambulance Service', '1994-999999')">
-                                <i class="fas fa-phone text-xs"></i>
-                                <span>Call</span>
-                            </button>
-                        </div>
-                    </div>
-
-                    <!-- Women & Child Helpline -->
-                    <div class="bg-white rounded-xl shadow-md p-5 hover:shadow-lg transition-all duration-300 hover:-translate-y-1" data-service="Women & Child Helpline" data-number="109" data-category="Help">
-                        <div class="flex justify-between items-start mb-3">
-                            <img src="assets/emergency.png" alt="Emergency" class="w-12 h-12 rounded-lg">
-                            <i class="fas fa-heart heart-icon-card text-gray-300 text-lg cursor-pointer hover:text-red-500 transition-colors duration-200 mt-1" data-service="Women & Child Helpline"></i>
-                        </div>
-                        <h3 class="text-base font-semibold text-gray-800 mb-1">Women & Child Helpline</h3>
-                        <p class="text-xs text-gray-600 mb-3">Help</p>
-                        <div class="text-2xl font-bold text-red-600 text-center mb-3">109</div>
-                        <div class="inline-block bg-purple-100 text-purple-700 px-2 py-1 rounded-full text-xs font-medium mb-4">Help</div>
-                        <div class="flex space-x-2">
-                            <button class="flex-1 bg-white border border-blue-400 text-blue-600 py-2 px-3 rounded-md text-sm font-medium hover:bg-blue-50 transition-all duration-200 flex items-center justify-center space-x-1" onclick="copyNumber('109', 'Women & Child Helpline')">
-                                <i class="fas fa-copy text-xs"></i>
-                                <span>Copy</span>
-                            </button>
-                            <button class="flex-1 bg-green-500 text-white py-2 px-3 rounded-md text-sm font-medium hover:bg-green-600 transition-all duration-200 flex items-center justify-center space-x-1" onclick="callService('Women & Child Helpline', '109')">
-                                <i class="fas fa-phone text-xs"></i>
-                                <span>Call</span>
-                            </button>
-                        </div>
-                    </div>
-
-                    <!-- Anti-Corruption Helpline -->
-                    <div class="bg-white rounded-xl shadow-md p-5 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 mt-3" data-service="Anti-Corruption Helpline" data-number="106" data-category="Govt.">
-                        <div class="flex justify-between items-start mb-3">
-                            <img src="assets/emergency.png" alt="Emergency" class="w-11 h-11 rounded-lg">
-                            <i class="fas fa-heart heart-icon-card text-gray-300 text-lg cursor-pointer hover:text-red-500 transition-colors duration-200 mt-1" data-service="Anti-Corruption Helpline"></i>
-                        </div>
-                        <h3 class="text-base font-semibold text-gray-800 mb-1">Anti-Corruption Helpline</h3>
-                        <p class="text-xs text-gray-600 mb-3">Government</p>
-                        <div class="text-2xl font-bold text-red-600 text-center mb-3">106</div>
-                        <div class="inline-block bg-gray-100 text-gray-700 px-2 py-1 rounded-full text-xs font-medium mb-4">Govt.</div>
-                        <div class="flex space-x-2">
-                            <button class="flex-1 bg-white border border-blue-400 text-blue-600 py-2 px-3 rounded-md text-sm font-medium hover:bg-blue-50 transition-all duration-200 flex items-center justify-center space-x-1" onclick="copyNumber('106', 'Anti-Corruption Helpline')">
-                                <i class="fas fa-copy text-xs"></i>
-                                <span>Copy</span>
-                            </button>
-                            <button class="flex-1 bg-green-500 text-white py-2 px-3 rounded-md text-sm font-medium hover:bg-green-600 transition-all duration-200 flex items-center justify-center space-x-1" onclick="callService('Anti-Corruption Helpline', '106')">
-                                <i class="fas fa-phone text-xs"></i>
-                                <span>Call</span>
-                            </button>
-                        </div>
-                    </div>
-
-                    <!-- Electricity Helpline -->
-                    <div class="bg-white rounded-xl shadow-md p-5 hover:shadow-lg transition-all duration-300 hover:-translate-y-1" data-service="Electricity Helpline" data-number="16216" data-category="Electricity">
-                        <div class="flex justify-between items-start mb-3">
-                            <img src="assets/emergency.png" alt="Emergency" class="w-12 h-12 rounded-lg">
-                            <i class="fas fa-heart heart-icon-card text-gray-300 text-lg cursor-pointer hover:text-red-500 transition-colors duration-200 mt-1" data-service="Electricity Helpline"></i>
-                        </div>
-                        <h3 class="text-base font-semibold text-gray-800 mb-1">Electricity Helpline</h3>
-                        <p class="text-xs text-gray-600 mb-3">Electricity</p>
-                        <div class="text-xl font-bold text-red-600 text-center mb-3">16216</div>
-                        <div class="inline-block bg-yellow-100 text-yellow-700 px-2 py-1 rounded-full text-xs font-medium mb-4">Electricity</div>
-                        <div class="flex space-x-2">
-                            <button class="flex-1 bg-white border border-blue-400 text-blue-600 py-2 px-3 rounded-md text-sm font-medium hover:bg-blue-50 transition-all duration-200 flex items-center justify-center space-x-1" onclick="copyNumber('16216', 'Electricity Helpline')">
-                                <i class="fas fa-copy text-xs"></i>
-                                <span>Copy</span>
-                            </button>
-                            <button class="flex-1 bg-green-500 text-white py-2 px-3 rounded-md text-sm font-medium hover:bg-green-600 transition-all duration-200 flex items-center justify-center space-x-1" onclick="callService('Electricity Helpline', '16216')">
-                                <i class="fas fa-phone text-xs"></i>
-                                <span>Call</span>
-                            </button>
-                        </div>
-                    </div>
-
-                    <!-- Brac Helpline -->
-                    <div class="bg-white rounded-xl shadow-md p-5 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 mt-1" data-service="Brac Helpline" data-number="16445" data-category="NGO">
-                        <div class="flex justify-between items-start mb-3">
-                            <img src="assets/brac.png" alt="Brac" class="w-11 h-11 rounded-lg">
-                            <i class="fas fa-heart heart-icon-card text-gray-300 text-lg cursor-pointer hover:text-red-500 transition-colors duration-200 mt-1" data-service="Brac Helpline"></i>
-                        </div>
-                        <h3 class="text-base font-semibold text-gray-800 mb-1">Brac Helpline</h3>
-                        <p class="text-xs text-gray-600 mb-3">NGO</p>
-                        <div class="text-2xl font-bold text-red-600 text-center mb-3">16445</div>
-                        <div class="inline-block bg-orange-100 text-orange-700 px-2 py-1 rounded-full text-xs font-medium mb-4">NGO</div>
-                        <div class="flex space-x-2">
-                            <button class="flex-1 bg-white border border-blue-400 text-blue-600 py-2 px-3 rounded-md text-sm font-medium hover:bg-blue-50 transition-all duration-200 flex items-center justify-center space-x-1" onclick="copyNumber('16445', 'Brac Helpline')">
-                                <i class="fas fa-copy text-xs"></i>
-                                <span>Copy</span>
-                            </button>
-                            <button class="flex-1 bg-green-500 text-white py-2 px-3 rounded-md text-sm font-medium hover:bg-green-600 transition-all duration-200 flex items-center justify-center space-x-1" onclick="callService('Brac Helpline', '16445')">
-                                <i class="fas fa-phone text-xs"></i>
-                                <span>Call</span>
-                            </button>
-                        </div>
-                    </div>
-
-                    <!-- Bangladesh Railway Helpline -->
-                    <div class="bg-white rounded-xl shadow-md p-5 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 mt-4" data-service="Bangladesh Railway Helpline" data-number="163" data-category="Travel">
-                        <div class="flex justify-between items-start mb-3">
-                            <img src="assets/Bangladesh-Railway.png" alt="Bangladesh Railway" class="w-12 h-12 rounded-lg">
-                            <i class="fas fa-heart heart-icon-card text-gray-300 text-lg cursor-pointer hover:text-red-500 transition-colors duration-200 mt-1" data-service="Bangladesh Railway Helpline"></i>
-                        </div>
-                        <h3 class="text-base font-semibold text-gray-800 mb-1">Bangladesh Railway Helpline</h3>
-                        <p class="text-xs text-gray-600 mb-3">Travel</p>
-                        <div class="text-2xl font-bold text-red-600 text-center mb-3">163</div>
-                        <div class="inline-block bg-indigo-100 text-indigo-700 px-2 py-1 rounded-full text-xs font-medium mb-4">Travel</div>
-                        <div class="flex space-x-2">
-                            <button class="flex-1 bg-white border border-blue-400 text-blue-600 py-2 px-3 rounded-md text-sm font-medium hover:bg-blue-50 transition-all duration-200 flex items-center justify-center space-x-1" onclick="copyNumber('163', 'Bangladesh Railway Helpline')">
-                                <i class="fas fa-copy text-xs"></i>
-                                <span>Copy</span>
-                            </button>
-                            <button class="flex-1 bg-green-500 text-white py-2 px-3 rounded-md text-sm font-medium hover:bg-green-600 transition-all duration-200 flex items-center justify-center space-x-1" onclick="callService('Bangladesh Railway Helpline', '163')">
-                                <i class="fas fa-phone text-xs"></i>
-                                <span>Call</span>
-                            </button>
-                        </div>
-                    </div>
+          <div class="lg:col-span-3 grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div class="bg-white shadow rounded-xl p-4 flex flex-col justify-between">
+              <div class="flex items-start justify-between">
+                <div class="flex items-center gap-2">
+                  <img src="./assets/emergency.png" alt="emergency" class="h-8 w-8">
+                  <div>
+                    <h2 class="font-bold text-gray-800">National Emergency Number</h2>
+                    <p class="text-sm text-gray-500">National Emergency</p>
+                  </div>
                 </div>
-            </section>
+                <button class="text-gray-400 hover:text-red-500">♡</button>
+              </div>
+              <p class="mt-3 text-2xl font-bold text-gray-900 mx-auto">999</p>
+              <span class="inline-block mt-2 text-sm px-3 py-1 bg-gray-100 rounded-full w-[45px]">All</span>
+              <div class="mt-3 flex items-center gap-2">
+                <button class="flex-1 border rounded-lg py-1 text-gray-600">📋 Copy</button>
+                <button class="flex-1 bg-green-600 text-white rounded-lg py-1 hover:bg-green-700">📞 Call</button>
+              </div>
+            </div>
 
-            <!-- Call History Section -->
-            <section class="lg:w-[380px]">
-                <div class="bg-white rounded-xl shadow-md p-5 sticky top-24">
-                    <div class="flex justify-between items-center mb-5 pb-3 border-b border-gray-200">
-                        <div class="flex items-center space-x-2">
-                            <i class="fas fa-clock text-blue-500 text-lg"></i>
-                            <span class="text-lg font-semibold text-gray-800">Call History</span>
-                        </div>
-                        <button class="bg-red-500 text-white px-3 py-2 rounded-md text-sm font-medium hover:bg-red-600 transition-colors duration-200" onclick="clearHistory()">Clear</button>
-                    </div>
-                    <div class="max-h-80 overflow-y-auto" id="history-content">
-                        <!-- Call history items will be dynamically added here -->
-                    </div>
+            <div class="bg-white shadow rounded-xl p-4 flex flex-col justify-between">
+              <div class="flex items-start justify-between">
+                <div class="flex items-center gap-2">
+                  <img src="./assets/police.png" alt="police" class="h-8 w-8">
+                  <div>
+                    <h2 class="font-bold text-gray-800">Police Helpline Number</h2>
+                    <p class="text-sm text-gray-500">Police</p>
+                  </div>
                 </div>
-            </section>
+                <button class="text-gray-400 hover:text-red-500">♡</button>
+              </div>
+              <p class="mt-3 text-2xl font-bold text-gray-900 mx-auto">999</p>
+              <span class="inline-block mt-2 text-sm px-3 py-1 bg-gray-100 rounded-full w-[62px]">Police</span>
+              <div class="mt-3 flex items-center gap-2">
+                <button class="flex-1 border rounded-lg py-1 text-gray-600">📋 Copy</button>
+                <button class="flex-1 bg-green-600 text-white rounded-lg py-1 hover:bg-green-700">📞 Call</button>
+              </div>
+            </div>
+    
+            <div class="bg-white shadow rounded-xl p-4 flex flex-col justify-between">
+              <div class="flex items-start justify-between">
+                <div class="flex items-center gap-2">
+                  <img src="./assets/fire-service.png" alt="fire" class="h-8 w-8">
+                  <div>
+                    <h2 class="font-bold text-gray-800">Fire Service Number</h2>
+                    <p class="text-sm text-gray-500">Fire Service</p>
+                  </div>
+                </div>
+                <button class="text-gray-400 hover:text-red-500">♡</button>
+              </div>
+              <p class="mt-3 text-2xl font-bold text-gray-900 mx-auto">999</p>
+              <span class="inline-block mt-2 text-sm px-3 py-1 bg-gray-100 rounded-full w-[50px]">Fire</span>
+              <div class="mt-3 flex items-center gap-2">
+                <button class="flex-1 border rounded-lg py-1 text-gray-600">📋 Copy</button>
+                <button class="flex-1 bg-green-600 text-white rounded-lg py-1 hover:bg-green-700">📞 Call</button>
+              </div>
+            </div>
+      
+            <div class="bg-white shadow rounded-xl p-4 flex flex-col justify-between">
+              <div class="flex items-start justify-between">
+                <div class="flex items-center gap-2">
+                  <img src="./assets/ambulance.png" alt="ambulance" class="h-8 w-8">
+                  <div>
+                    <h2 class="font-bold text-gray-800">Ambulance Service</h2>
+                    <p class="text-sm text-gray-500">Ambulance</p>
+                  </div>
+                </div>
+                <button class="text-gray-400 hover:text-red-500">♡</button>
+              </div>
+              <p class="mt-3 text-2xl font-bold text-gray-900 mx-auto">1994-999999</p>
+              <span class="inline-block mt-2 text-sm px-3 py-1 bg-gray-100 rounded-full w-[65px]">Health</span>
+              <div class="mt-3 flex items-center gap-2">
+                <button class="flex-1 border rounded-lg py-1 text-gray-600">📋 Copy</button>
+                <button class="flex-1 bg-green-600 text-white rounded-lg py-1 hover:bg-green-700">📞 Call</button>
+              </div>
+            </div>
+      
+            <div class="bg-white shadow rounded-xl p-4 flex flex-col justify-between">
+              <div class="flex items-start justify-between">
+                <div class="flex items-center gap-2">
+                  <img src="./assets/emergency.png" alt="women" class="h-8 w-8">
+                  <div>
+                    <h2 class="font-bold text-gray-800">Women & Child Helpline</h2>
+                    <p class="text-sm text-gray-500">Women & Child Helpline</p>
+                  </div>
+                </div>
+                <button class="text-gray-400 hover:text-red-500">♡</button>
+              </div>
+              <p class="mt-3 text-2xl font-bold text-gray-900 mx-auto">109</p>
+              <span class="inline-block mt-2 text-sm px-3 py-1 bg-gray-100 rounded-full w-[54px]">Help</span>
+              <div class="mt-3 flex items-center gap-2">
+                <button class="flex-1 border rounded-lg py-1 text-gray-600">📋 Copy</button>
+                <button class="flex-1 bg-green-600 text-white rounded-lg py-1 hover:bg-green-700">📞 Call</button>
+              </div>
+            </div>
+      
+            <div class="bg-white shadow rounded-xl p-4 flex flex-col justify-between">
+              <div class="flex items-start justify-between">
+                <div class="flex items-center gap-2">
+                  <img src="./assets/emergency.png" alt="anti-corruption" class="h-8 w-8">
+                  <div>
+                    <h2 class="font-bold text-gray-800">Anti-Corruption Helpline</h2>
+                    <p class="text-sm text-gray-500">Anti-Corruption</p>
+                  </div>
+                </div>
+                <button class="text-gray-400 hover:text-red-500">♡</button>
+              </div>
+              <p class="mt-3 text-2xl font-bold text-gray-900 mx-auto">106</p>
+              <span class="inline-block mt-2 text-sm px-3 py-1 bg-gray-100 rounded-full w-[60px]">Govt.</span>
+              <div class="mt-3 flex items-center gap-2">
+                <button class="flex-1 border rounded-lg py-1 text-gray-600">📋 Copy</button>
+                <button class="flex-1 bg-green-600 text-white rounded-lg py-1 hover:bg-green-700">📞 Call</button>
+              </div>
+            </div>
+
+            <div class="bg-white shadow rounded-xl p-4 flex flex-col justify-between">
+              <div class="flex items-start justify-between">
+                <div class="flex items-center gap-2">
+                  <img src="./assets/emergency.png" alt="electricity" class="h-8 w-8">
+                  <div>
+                    <h2 class="font-bold text-gray-800">Electricity Helpline</h2>
+                    <p class="text-sm text-gray-500">Electricity Outage</p>
+                  </div>
+                </div>
+                <button class="text-gray-400 hover:text-red-500">♡</button>
+              </div>
+              <p class="mt-3 text-2xl font-bold text-gray-900 mx-auto">16216</p>
+              <span class="inline-block mt-2 text-sm px-3 py-1 bg-gray-100 rounded-full w-[88px]">Electricity</span>
+              <div class="mt-3 flex items-center gap-2">
+                <button class="flex-1 border rounded-lg py-1 text-gray-600">📋 Copy</button>
+                <button class="flex-1 bg-green-600 text-white rounded-lg py-1 hover:bg-green-700">📞 Call</button>
+              </div>
+            </div>
+      
+            <div class="bg-white shadow rounded-xl p-4 flex flex-col justify-between">
+              <div class="flex items-start justify-between">
+                <div class="flex items-center gap-2">
+                  <img src="./assets/brac.png" alt="brac" class="h-8 w-8">
+                  <div>
+                    <h2 class="font-bold text-gray-800">Brac Helpline</h2>
+                    <p class="text-sm text-gray-500">Brac</p>
+                  </div>
+                </div>
+                <button class="text-gray-400 hover:text-red-500">♡</button>
+              </div>
+              <p class="mt-3 text-2xl font-bold text-gray-900 mx-auto">16445</p>
+              <span class="inline-block mt-2 text-sm px-3 py-1 bg-gray-100 rounded-full w-[50px]">NGO</span>
+              <div class="mt-3 flex items-center gap-2">
+                <button class="flex-1 border rounded-lg py-1 text-gray-600">📋 Copy</button>
+                <button class="flex-1 bg-green-600 text-white rounded-lg py-1 hover:bg-green-700">📞 Call</button>
+              </div>
+            </div>
+    
+            <div class="bg-white shadow rounded-xl p-4 flex flex-col justify-between">
+              <div class="flex items-start justify-between">
+                <div class="flex items-center gap-2">
+                  <img src="./assets/Bangladesh-Railway.png" alt="railway" class="h-8 w-8">
+                  <div>
+                    <h2 class="font-bold text-gray-800">Bangladesh Railway Helpline</h2>
+                    <p class="text-sm text-gray-500">Bangladesh Railway</p>
+                  </div>
+                </div>
+                <button class="text-gray-400 hover:text-red-500">♡</button>
+              </div>
+              <p class="mt-3 text-2xl font-bold text-gray-900 mx-auto">163</p>
+              <span class="inline-block mt-2 text-sm px-3 py-1 bg-gray-100 rounded-full w-[65px]">Travel</span>
+              <div class="mt-3 flex items-center gap-2">
+                <button class="flex-1 border rounded-lg py-1 text-gray-600">📋 Copy</button>
+                <button class="flex-1 bg-green-600 text-white rounded-lg py-1 hover:bg-green-700">📞 Call</button>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Right: Call History -->
+          <div class="bg-white shadow rounded-xl p-4 flex flex-col">
+            <div class="flex justify-between items-center border-b pb-2 mb-2">
+              <h2 class="font-bold text-gray-800 flex items-center gap-2">🕒 Call History</h2>
+              <button class="bg-green-600 text-white text-sm px-3 py-1 rounded-full hover:bg-green-700">Clear</button>
+            </div>
+            <div class="flex-1 overflow-y-auto space-y-3">
+              <div class="flex justify-between text-sm">
+                <div>
+                  <p class="font-semibold text-gray-700">Fire Service Number</p>
+                  <p class="text-gray-500 text-xs">999</p>
+                </div>
+                <span class="text-gray-400 text-xs">11:36:58 AM</span>
+              </div>
+              <div class="flex justify-between text-sm">
+                <div>
+                  <p class="font-semibold text-gray-700">National Emergency Number</p>
+                  <p class="text-gray-500 text-xs">1994-999999</p>
+                </div>
+                <span class="text-gray-400 text-xs">11:36:58 AM</span>
+              </div>
+              <div class="flex justify-between text-sm">
+                <div>
+                  <p class="font-semibold text-gray-700">Bangladesh Railway Helpline</p>
+                  <p class="text-gray-500 text-xs">163</p>
+                </div>
+                <span class="text-gray-400 text-xs">11:36:58 AM</span>
+              </div>
+            </div>
+          </div>
         </div>
-        </main>
+      </div>
+      
+      
 
 </body>
 </html>
